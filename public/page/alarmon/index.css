@@ -1,0 +1,55 @@
+body {
+    background: black;
+}
+.alert {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: 1200ms effect infinite;
+}
+
+@keyframes effect {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#rightTop {
+    right: 0;
+    top: 0;
+}
+#leftTop {
+    left: 0;
+    top: 0;
+}
+#rightBot {
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+#leftBot {
+    left: 0;
+    bottom: 0;
+    transform: rotate(270deg);
+}
+#go {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transform: scale(0.35);
+    transition: 0.2s;
+    cursor: pointer;
+}
+#go:hover {
+    opacity: 0.5;
+    transform: scale(0.37);
+}
